@@ -31,7 +31,7 @@ img {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1.5em;
 
     .logo {
         color: #F94710;
@@ -78,23 +78,66 @@ section {
 
 .education {
     position: relative;
-    background: #F9F3DF;
+    // background: #F9F3DF;
 }
 
-//SMALL PURPLE IN CORNER, MAYBE PUT BACK IN LATER IF I CAN FIGURE IT OUT
-// .education::before {
-//     content: "";
-//     position: absolute;
-//     width: 200px;
-//     height: 200px;
-//     border-radius: 50%;
-//     background: #E5D5FA;
-//     top: 0;
-//     left: 0;
-//     z-index: -1;
-// }
+.education::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #E5D5FA;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
 .title {
     color: #0000FF;
     font-weight: bold;
     font-size: 1.25em;
+}
+.education-desc {
+    color: black;
+    margin-bottom: 3em;
+    font-size: .95em;
+    line-height: 1.8em;
+    font-weight: 500;
+}
+
+.cards {
+    background: #E0A9BB;
+}
+
+.cards-container ul li {
+
+    background: white;
+    padding: 2em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+
+    .icon-container {
+        height: 100px;
+        display: grid;
+        place-content: center;
+        margin: 0 auto;
+
+        &.one {
+            width: 100px;
+        }
+        &.two {
+            width: 60px;
+        }
+        &.three {
+            width: 160px;
+        }
+    }
+
+    .cards-title {
+        font-weight: bold;
+    }
+
+    .cards-desc {
+        margin-bottom: 2em;
+    }
 }
