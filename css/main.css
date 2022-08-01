@@ -1,1 +1,95 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  -webkit-text-decoration: non;
+          text-decoration: non;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: #F6C1ED;
+}
+.nav-container a {
+  color: #FF9232;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+header .logo {
+  color: #F94710;
+  font-weight: bold;
+}
+header ul {
+  display: flex;
+}
+header ul a {
+  display: block;
+  padding: 0 3em;
+}
+
+.social-header {
+  display: none;
+}
+
+.hero {
+  background: #CDF2CA;
+  color: #0000FF;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.meet {
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+  color: #0000FF;
+}
+.meet span {
+  margin-top: 1em;
+  margin-right: 0.5em;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.education {
+  position: relative;
+  background-color: #FCF2D0;
+}
+
+.education::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #E5D5FA;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.title {
+  color: #0000FF;
+}/*# sourceMappingURL=main.css.map */
