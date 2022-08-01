@@ -78,19 +78,23 @@ section {
 
 .education {
     position: relative;
-    background-color: #FCF2D0;
+    background: #F9F3DF;
 }
-.education::before {
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #E5D5FA;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
+
+//SMALL PURPLE IN CORNER, MAYBE PUT BACK IN LATER IF I CAN FIGURE IT OUT
+// .education::before {
+//     content: "";
+//     position: absolute;
+//     width: 200px;
+//     height: 200px;
+//     border-radius: 50%;
+//     background: #E5D5FA;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+// }
 .title {
     color: #0000FF;
+    font-weight: bold;
+    font-size: 1.25em;
 }
