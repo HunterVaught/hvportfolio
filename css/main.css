@@ -21,7 +21,7 @@ img {
 }
 
 .nav-container {
-  background: #F6C1ED;
+  background: #6eda66;
 }
 .nav-container a {
   color: #FF9232;
@@ -51,12 +51,17 @@ header ul a {
   display: none;
 }
 
+.me {
+  display: none;
+}
+
 .hero {
   background: #CDF2CA;
   color: #0000FF;
   display: grid;
   text-align: center;
   padding: 4em;
+  margin-bottom: -1em;
 }
 
 .meet {
@@ -96,7 +101,7 @@ section {
 
 .experience2 {
   position: relative;
-  background: #F9F3DF;
+  background: #CDF2CA;
   z-index: -2;
 }
 
@@ -124,6 +129,8 @@ section {
   font-size: 2.3em;
   position: relative;
   text-align: center;
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 
 .section-title::before {
@@ -154,11 +161,12 @@ section {
 
 .cards {
   background: #E0A9BB;
+  margin-bottom: -1em;
 }
 
 .cards-container ul li {
   background: white;
-  padding: 2em;
+  padding: 1em;
   border-radius: 1em;
   margin-bottom: 1em;
 }
@@ -169,7 +177,7 @@ section {
   margin: 0 auto;
 }
 .cards-container ul li .icon-container.one {
-  width: 100px;
+  width: 120px;
 }
 .cards-container ul li .icon-container.two {
   width: 60px;
@@ -185,10 +193,107 @@ section {
 }
 
 .portfolio {
-  background: #F7F7F7;
+  background: white;
 }
 
 .portfolio-container a img {
   border-radius: 1em;
   margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+  .portfolio-left {
+    text-align: left;
+  }
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+  .portfolio-left {
+    display: grid;
+    place-content: center;
+  }
+  .portfolio-right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  .cards {
+    margin-top: -7.5em;
+    padding-top: 5em;
+  }
+  .cards-container ul {
+    display: grid;
+    margin-bottom: -8em;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 1em;
+  }
+  .section-title {
+    z-index: 1;
+  }
+  .spacer {
+    margin: -3em;
+  }
+  .portfolio-container img {
+    margin-left: 2em;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 70vh;
+  }
+  .nav-container {
+    display: grid;
+    grid-template-columns: 45% auto;
+    padding-top: 1em;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 0;
+  }
+  section {
+    padding: 4em;
+  }
+  .social-header {
+    display: block;
+  }
+  .social-header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+  .social-header ul .social1 {
+    width: 51px;
+  }
+  .social-header ul .social2 {
+    width: 55px;
+  }
+  .social-header ul .social3 {
+    width: 54px;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 33% auto;
+    padding: 0;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 4em;
+  }
+  .hero .content h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+  .hero .meet {
+    font-size: 1.5em;
+  }
+  .hero .me {
+    display: grid;
+    grid-template-columns: 75% auto;
+    display: unset;
+    margin-left: 50%;
+    margin-top: 7%;
+    width: 30%;
+  }
 }/*# sourceMappingURL=main.css.map */
