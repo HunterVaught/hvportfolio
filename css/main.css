@@ -31,10 +31,13 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1.5em;
+  color: #ff7700;
+  font-weight: bold;
 }
 header .logo {
   color: #F94710;
   font-weight: bold;
+  text-decoration: none;
 }
 header ul {
   display: flex;
@@ -73,11 +76,13 @@ section {
   text-align: center;
 }
 
-.education {
+.experience {
   position: relative;
+  background: #F9F3DF;
+  z-index: -2;
 }
 
-.education::before {
+.experience::before {
   content: "";
   position: absolute;
   width: 200px;
@@ -86,13 +91,57 @@ section {
   background: #E5D5FA;
   top: 0;
   left: 0;
+  z-index: -1;
+}
+
+.experience2 {
+  position: relative;
+  background: #F9F3DF;
   z-index: -2;
+}
+
+.experience2::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #E5D5FA;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .title {
   color: #0000FF;
   font-weight: bold;
   font-size: 1.25em;
+}
+
+.section-title {
+  color: #8100E2;
+  font-weight: bold;
+  font-size: 2.3em;
+  position: relative;
+  text-align: center;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 2.5em;
+  border-radius: 35%;
+  background: #FFDEFA;
+  top: -0.5em;
+  left: calc(50% - 150px);
+  z-index: -1;
+}
+
+.experience-subhead {
+  font-weight: bold;
+  color: #8100E2;
+  font-size: 1.15em;
 }
 
 .education-desc {
@@ -132,5 +181,14 @@ section {
   font-weight: bold;
 }
 .cards-container ul li .cards-desc {
+  margin-bottom: 2em;
+}
+
+.portfolio {
+  background: #F7F7F7;
+}
+
+.portfolio-container a img {
+  border-radius: 1em;
   margin-bottom: 2em;
 }/*# sourceMappingURL=main.css.map */
